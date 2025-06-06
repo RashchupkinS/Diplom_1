@@ -1,7 +1,6 @@
 from praktikum.ingredient_types import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING
 
 
-
 # список булок для тестов класса Bun
 buns_name_price = [
     ["Краторная булка N-200i", 1255.0],

@@ -1,41 +1,30 @@
 import pytest
-import allure
 from unittest.mock import Mock
 from praktikum.database import Database
 from praktikum.burger import Burger
 
 
-
-
+# фикстура создает экземпляр класса Database
 @pytest.fixture
 def database():
-    with allure.step("Создать экземпляр базы данных"):
-        return Database()
+    return Database()
 
-
+# фикстура создает экземпляр mock-булки
 @pytest.fixture
 def mock_bun():
-    with allure.step("Создать экземпляр mock-булки"):
-        return Mock()
+    return Mock()
 
-
+# фикстура создает экземпляр mock-ингредиента
 @pytest.fixture
 def mock_ingredient_1():
-    with allure.step("Создать экземпляр mock-ингредиента"):
-        return Mock()
+    return Mock()
 
-
+# фикстура создает экземпляр mock-ингредиента
 @pytest.fixture
 def mock_ingredient_2():
-    with allure.step("Создать экземпляр mock-ингредиента"):
-        return Mock()
+    return Mock()
 
-
+# фикстура создает экземпляр бургера
 @pytest.fixture
 def burger():
-    with allure.step("Создать экземпляр бургера"):
-        return Burger()
-
-
-
-
+    return Burger()
