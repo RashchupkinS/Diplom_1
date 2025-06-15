@@ -57,7 +57,7 @@ class TestBurger:
         burger.bun = mock_bun
         burger.ingredients.append(mock_ingredient_1)
         burger.ingredients.append(mock_ingredient_2)
-        assert burger.get_price() == 2490.0  # 988.0*2 + 90.0 + 424.0
+        assert burger.get_price() == 2490.0  #  988.0*2 + 90.0 + 424.0
 
 
     def test_get_receipt_return_burger_receipt(self, mock_bun, mock_ingredient_1, mock_ingredient_2, burger):
